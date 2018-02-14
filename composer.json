@@ -1,20 +1,20 @@
 {
-    "name": "laravel-frontend-presets/skeleton",
-    "description": "Laravel 5.5.x Front-end preset for skeleton",
-    "keywords": ["laravel", "preset", "skeleton"],
+    "name": "laravel-frontend-presets/karma-eslint",
+    "description": "Laravel 5.5.x|5.6.x Front-end preset for Karma ESLint (Unit Testing Example Vue Component, Code Coverage, ESLint, Babel...)",
+    "keywords": ["laravel", "preset", "karma","eslint","coverage","testing"],
     "license": "MIT",
     "require": {
-        "laravel/framework": "5.5.*"
+        "laravel/framework": "5.5.*|5.6.*"
     },
     "autoload": {
         "psr-4": {
-            "LaravelFrontendPresets\\SkeletonPreset\\": "src/"
+            "LaravelFrontendPresets\\KarmaEslintPreset\\": "src/"
         }
     },
     "extra": {
       "laravel": {
         "providers": [
-          "LaravelFrontendPresets\\SkeletonPreset\\SkeletonPresetServiceProvider"
+          "LaravelFrontendPresets\\KarmaEslintPreset\\KarmaEslintPresetServiceProvider"
        ]
       }
     }
