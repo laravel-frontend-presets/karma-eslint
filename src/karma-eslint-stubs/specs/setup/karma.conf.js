@@ -4,8 +4,9 @@
 //   https://github.com/webpack/karma-webpack
 
 const webpackConfig = require('laravel-mix/setup/webpack.config.js');
-delete webpackConfig.entry // no need for entries in test context
-webpackConfig.devtool = '#inline-source-map'
+
+delete webpackConfig.entry; // no need for entries in test context
+webpackConfig.devtool = '#inline-source-map';
 
 module.exports = function karmaConfig(config) {
   config.set({

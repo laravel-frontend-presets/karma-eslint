@@ -15,15 +15,15 @@
 </template>
 
 <script>
-/* eslint-disable */
+/* eslint-disable no-console */
 export default {
   mounted() {
     console.log('Component mounted...');
   },
   methods: {
     hello() {
-        return 'Add a test for this function if you want me to be covered!'
+      return 'Add a test for this function if you want me to be covered!';
     },
-  }
+  },
 };
 </script>
