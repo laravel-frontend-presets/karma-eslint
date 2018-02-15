@@ -1,6 +1,6 @@
 {
     "name": "laravel-frontend-presets/karma-eslint",
-    "description": "Laravel 5.5.x|5.6.x Front-end preset for Karma ESLint (Unit Testing Example Vue Component, Code Coverage, ESLint, Babel...)",
+    "description": "Laravel 5.5.x|5.6.x Front-end preset for Karma & ESLint (Unit Testing Vue Component, Code Coverage, ESLint, Babel...)",
     "keywords": ["laravel", "preset", "karma","eslint","coverage","testing"],
     "license": "MIT",
     "require": {
