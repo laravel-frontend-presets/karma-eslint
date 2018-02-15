@@ -1,7 +1,12 @@
-require('babel-polyfill/dist/polyfill.min.js')
-window.Promise = require('promise-polyfill')
+require('babel-polyfill/dist/polyfill.min.js');
 
-require('./testUtils')
+window.Promise = require('promise-polyfill');
+
+require('./testUtils');
+
+// instantiate Vue
+// window.Vue = require('vue')
+// Vue.config.productionTip = false;
 
 // require all test files (files that ends with .spec.js)
 const testsContext = require.context('./../', true, /\.spec$/);
@@ -12,4 +17,3 @@ testsContext.keys().forEach(testsContext);
 // you want coverage for.
 const srcContext = require.context('../../resources/assets/js/components', true, /^\.\/(?!main(\.js)?$)/);
 srcContext.keys().forEach(srcContext);
-
