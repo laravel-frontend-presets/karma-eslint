@@ -2,12 +2,13 @@
 
 Laravel Preset for using Karma, ESLint (Airbnb), along with your built in laravel-mix & Vue.js setup, to get a working unit testing & code coverage for your JS assets.
 
-The setup in this preset was extracted/modified from Vue.js [webpack template](https://github.com/vuejs-templates/webpack). Configured to use [Karma](https://github.com/karma-runner/karma) as the test runner, [Istanbul](https://github.com/gotwarlost/istanbul) as the code coverage tool, [ESLint](https://github.com/eslint/eslint) for javascript linting using [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), all of that while keeping your laravel-mix setup and frontend development experience untouched.
+The setup in this preset was extracted/modified from Vue.js [webpack template](https://github.com/vuejs-templates/webpack). Configured to use [Karma](https://github.com/karma-runner/karma) as the test runner, [Mocha](https://mochajs.org/) as the testing framework, [Istanbul](https://github.com/gotwarlost/istanbul) as the code coverage tool, [ESLint](https://github.com/eslint/eslint) for javascript linting using [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), all of that while keeping your laravel-mix setup and frontend development experience untouched.
 
 ``` bash
 laravel new my-app && cd my-app
 composer require laravel-frontend-presets/karma-eslint
 php artisan preset karma-eslint
+y # copying files confirmation
 npm install
 npm test
 ```
