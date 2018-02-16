@@ -6,6 +6,7 @@
         "test": "npm run unit -- --single-run",
         "test:watch": "npm run unit",
         "lint": "eslint --ext .js,.vue resources/assets/js/components specs",
+        "lint:fix": "npm run lint -- --fix",
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
