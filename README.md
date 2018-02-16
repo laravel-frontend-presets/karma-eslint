@@ -6,7 +6,7 @@ The setup in this preset was extracted/modified from Vue.js [webpack template](h
 
 ``` bash
 laravel new my-app && cd my-app
-composer require laravel-frontend-presets/karma-eslint
+composer require mohannadnaj/laravel-karma-eslint-preset
 php artisan preset karma-eslint
 npm install
 npm test
@@ -17,7 +17,7 @@ npm test
 1. Fresh install Laravel (5.5.x or 5.6.x) and `cd` to your app.
 2. Install this preset via composer:
 
-        composer require laravel-frontend-presets/karma-eslint
+        composer require mohannadnaj/laravel-karma-eslint-preset
 
 3. Use `php artisan preset karma-eslint` for scaffolding this preset. You will be prompted for confirmation of copying the files and overriding the existing ones. **It's highly recommended to use this preset at the initial instantiation of your laravel project, otherwise, commit your changes before using it**.
 
