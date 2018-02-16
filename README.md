@@ -4,26 +4,19 @@ Laravel Preset for using Karma, ESLint (Airbnb), along with your built in larave
 
 The setup in this preset was extracted/modified from Vue.js [webpack template](https://github.com/vuejs-templates/webpack). Configured to use [Karma](https://github.com/karma-runner/karma) as the test runner, [Mocha](https://mochajs.org/) as the testing framework, [Istanbul](https://github.com/gotwarlost/istanbul) as the code coverage tool, [ESLint](https://github.com/eslint/eslint) for javascript linting using [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript), all of that while keeping your laravel-mix setup and frontend development experience untouched.
 
-``` bash
-laravel new my-app && cd my-app
-composer require laravel-frontend-presets/karma-eslint
-php artisan preset karma-eslint
-y # copying files confirmation
-npm install
-npm test
-```
-![screenshot](https://i.imgur.com/uNl8dMp.png)
+## Contents
 
-## Usage
+[Installation](#installation)
+[Quickstart](#quickstart)
+[Screenshot](#screenshot)
+[Credits](#credits)
+[License](#license)
+
+## Installation
 1. Fresh install Laravel (5.5.x or 5.6.x) and `cd` to your app.
-2. Install this preset via composer:
-
-        composer require laravel-frontend-presets/karma-eslint
-
+2. Install this preset via composer: `composer require laravel-frontend-presets/karma-eslint`
 3. Use `php artisan preset karma-eslint` for scaffolding this preset. You will be prompted for confirmation of copying the files and overriding the existing ones. **It's highly recommended to use this preset at the initial instantiation of your laravel project, otherwise, commit your changes before using it**.
-
 4. `npm install` (or `yarn install`  if you are using [yarn](https://yarnpkg.com/en/), and you should 😬).
-
 5. discover the npm scripts:
 - `npm run [dev|watch|hot|prod]` is the standard commands shipped with the fresh laravel, check out the relevant [laravel documentation](https://laravel.com/docs/5.6/frontend)
 -  `npm run test` or `npm test` run the unit tests and check out the coverage report generated on `/coverage`.
@@ -33,17 +26,30 @@ npm test
 
 6. The preset will create a directory at the root of your project called `specs`, this is your entry point for writing JS unit tests.
 
-> Note: it's named `specs` for differentiation from your backend php `tests` directory. it's up to you if you want to change this you will have to modify the path at the `test` npm script and the path at the tests entry point `specs/setup/index.js` which is called from the karma config file at `specs/setup/karma.conf.js`.
+Note: it's named `specs` for differentiation from your backend php `tests` directory. it's up to you if you want to change this you will have to modify the path at the `test` npm script and the path at the tests entry point `specs/setup/index.js` which is called from the karma config file at `specs/setup/karma.conf.js`.
+
+
+## Quickstart
+``` bash
+laravel new my-app && cd my-app
+composer require laravel-frontend-presets/karma-eslint
+php artisan preset karma-eslint
+y # copying files confirmation
+npm install
+npm test
+```
+
+## Screenshot
+* `npm test`
+
+![screenshot](https://i.imgur.com/uNl8dMp.png)
 
 ## Credits
-
 - [@m1guelpf](https://github.com/m1guelpf) for the [skeleton preset](https://github.com/laravel-frontend-presets/skeleton)
 - [vuejs webpack template](https://github.com/vuejs-templates/webpack) contributors.
 
 ## License
-
 The MIT License (MIT).
 
-## Development TODOs
-
+## TODOs
 - Prompt the user for options other than ESLint Airbnb style guide.
