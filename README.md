@@ -6,11 +6,11 @@ The setup in this preset was extracted/modified from Vue.js [webpack template](h
 
 ## Contents
 
-[Installation](#installation)
-[Quickstart](#quickstart)
-[Screenshot](#screenshot)
-[Credits](#credits)
-[License](#license)
+- [Installation](#installation)
+- [Quickstart](#quickstart)
+- [Screenshot](#screenshot)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 1. Fresh install Laravel (5.5.x or 5.6.x) and `cd` to your app.
